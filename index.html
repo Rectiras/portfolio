@@ -3,28 +3,531 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BerkayCS</title>
+  <meta name="description" content="Berkay Çağrı Soylu - Computer Science Graduate Student & Software Engineer specializing in full-stack development, data engineering, and machine learning.">
+  <meta name="keywords" content="Berkay Soylu, Software Engineer, Computer Science, Full Stack Developer, Data Engineer">
+  <meta name="author" content="Berkay Çağrı Soylu">
+  <title>Berkay Çağrı Soylu - Software Engineer & CS Graduate Student</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Berkay Çağrı Soylu</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">BCS</div>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <section id="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Creative Developer</p>
-    <button id="explore-btn">Explore My Work</button>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-title">Berkay Çağrı Soylu</h1>
+      <h2 class="hero-subtitle">Software Engineer & Computer Science Graduate Student</h2>
+      <p class="hero-description">
+        I specialize in full-stack development, data engineering, and building innovative solutions 
+        that bridge technology and real-world impact. Currently pursuing my Master's in Computer Science 
+        at the University of Stuttgart.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="CV.pdf" class="btn btn-secondary" download>Download CV</a>
+      </div>
+    </div>
   </section>
 
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Get to know me better</p>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm a passionate software engineer with a strong foundation in computer science and engineering. 
+          My journey in tech has taken me from developing e-commerce platforms to leading data engineering 
+          projects and creating innovative solutions for social impact.
+        </p>
+        <p>
+          Currently pursuing my Master's degree at the University of Stuttgart, I'm constantly expanding 
+          my knowledge in machine learning, artificial intelligence, and modern web technologies. I thrive 
+          on challenges that require creative problem-solving and have a proven track record of delivering 
+          high-quality, scalable solutions.
+        </p>
+        <p>
+          When I'm not studying or working, I enjoy researching about recent developments, exploring new technologies, 
+          and work on my projects. I believe in the power of technology to create positive change 
+          and am always looking for opportunities to make a meaningful impact.
+        </p>
+      </div>
+      
+      <div class="about-stats">
+        <div class="stat-card scroll-reveal">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card scroll-reveal">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card scroll-reveal">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Technologies Mastered</div>
+        </div>
+        <div class="stat-card scroll-reveal">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Languages Spoken</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-subtitle">My career journey and achievements</p>
+    
+    <div class="timeline">
+      <!-- IT Manager -->
+      <div class="timeline-item scroll-reveal">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">IT Manager</h3>
+              <p class="timeline-company">Soylu Metal</p>
+            </div>
+            <span class="timeline-date">Feb 2024 – Apr 2025</span>
+          </div>
+          <p class="timeline-description">
+            Led the creation and management of the "Marasantiya Ceviz" premium walnut brand, 
+            developing a comprehensive e-commerce platform from the ground up.
+          </p>
+          <ul class="timeline-highlights">
+            <li>Developed and maintained a full-featured e-commerce website using WordPress</li>
+            <li>Implemented responsive design ensuring seamless mobile compatibility</li>
+            <li>Optimized SEO performance, significantly improving online visibility</li>
+            <li>Managed end-to-end operations including sales, stock management, and site maintenance</li>
+            <li>Enhanced customer engagement through strategic content updates and UX improvements</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lead Software Data Engineer -->
+      <div class="timeline-item scroll-reveal">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Lead Software Data Engineer</h3>
+              <p class="timeline-company">Jeton Digital (Remote)</p>
+            </div>
+            <span class="timeline-date">Jul 2023 – Jan 2024</span>
+          </div>
+          <p class="timeline-description">
+            Led the development of an innovative influencer commission platform, managing both 
+            technical implementation and team coordination across multiple projects.
+          </p>
+          <ul class="timeline-highlights">
+            <li>Architected and deployed influencermarkamama.com using Django framework</li>
+            <li>Designed and implemented a sophisticated commission calculation system</li>
+            <li>Created task management and star product features for enhanced influencer engagement</li>
+            <li>Developed role-based access control for brand users and influencers</li>
+            <li>Applied data engineering techniques to analyze user behavior and optimize platform performance</li>
+            <li>Coordinated cross-functional teams to ensure timely project delivery</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- IT Consultant -->
+      <div class="timeline-item scroll-reveal">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">IT Consultant</h3>
+              <p class="timeline-company">Soylu Metal</p>
+            </div>
+            <span class="timeline-date">Oct 2022 – Apr 2023</span>
+          </div>
+          <ul class="timeline-highlights">
+            <li>Modernized IT infrastructure with new server installations and system upgrades</li>
+            <li>Led enterprise resource migration to up-to-date software solutions</li>
+            <li>Provided strategic IT consulting to improve operational efficiency</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Erasmus Internship -->
+      <div class="timeline-item scroll-reveal">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Erasmus Intern</h3>
+              <p class="timeline-company">Jeton Digital (London, UK)</p>
+            </div>
+            <span class="timeline-date">Jul – Sep 2022</span>
+          </div>
+          <ul class="timeline-highlights">
+            <li>Performed data analysis and visualization for video interview transcripts</li>
+            <li>Configured CI/CD pipelines for automated deployment workflows</li>
+            <li>Developed and deployed web applications in Azure cloud environment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <h2 class="section-title">Education & Certifications</h2>
+    <p class="section-subtitle">Academic background and achievements</p>
+    
+    <div class="education-grid">
+      <!-- Master's Degree -->
+      <div class="education-card scroll-reveal">
+        <div class="education-icon">🎓</div>
+        <div class="education-content">
+          <h3 class="education-degree">Master of Science in Computer Science</h3>
+          <p class="education-school">University of Stuttgart</p>
+          <p class="education-date">April 2025 – Present</p>
+          <p class="education-details">
+            Advancing knowledge in advanced algorithms, machine learning, artificial intelligence, 
+            and modern software engineering practices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bachelor's Degree -->
+      <div class="education-card scroll-reveal">
+        <div class="education-icon">🎓</div>
+        <div class="education-content">
+          <h3 class="education-degree">Bachelor of Science in Computer Science and Engineering</h3>
+          <p class="education-school">Sabanci University, School of Natural Sciences</p>
+          <p class="education-date">September 2018 – July 2022</p>
+          <p class="education-details">
+            <strong>Honors:</strong> Three-term Honor Certificate, 25% Scholarship<br>
+            <strong>Key Courses:</strong> Data Structures, Database Systems, Algorithms, Machine Learning, 
+            Natural Language Processing, Artificial Intelligence, Software Engineering
+          </p>
+        </div>
+      </div>
+
+      <!-- High School -->
+      <div class="education-card scroll-reveal">
+        <div class="education-icon">📚</div>
+        <div class="education-content">
+          <h3 class="education-degree">High School Diploma with Preparatory Class</h3>
+          <p class="education-school">ODTU GVO</p>
+          <p class="education-date">September 2013 – June 2018</p>
+        </div>
+      </div>
+
+      <!-- Certification -->
+      <div class="education-card scroll-reveal">
+        <div class="education-icon">🏆</div>
+        <div class="education-content">
+          <h3 class="education-degree">Intercultural Mentoring Program Certificate</h3>
+          <p class="education-school">University of Stuttgart</p>
+          <p class="education-date">September 30, 2025</p>
+          <p class="education-details">
+            Completed mentorship program focused on intercultural communication and professional development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <p class="section-subtitle">Tools and technologies I work with</p>
+    
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">💻</span>
+          Programming Languages
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">R</span>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🌐</span>
+          Web Development
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Flutter</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🗄️</span>
+          Databases
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🛠️</span>
+          Tools & Platforms
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">n8n</span>
+          <span class="skill-tag">OutSystems (ODC)</span>
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+
+      <!-- AI & Machine Learning -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🤖</span>
+          AI & Machine Learning
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">RAG Systems</span>
+          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag">LLMs</span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="skill-category scroll-reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🌍</span>
+          Languages
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Turkish (Native)</span>
+          <span class="skill-tag">English (Fluent)</span>
+          <span class="skill-tag">German (Basic)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Highlights of my work and achievements</p>
+    
+    <div class="projects-grid">
+      <!-- OutSystems Event -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">🏆</span>
+          <span class="project-date">Oct 2025</span>
+        </div>
+        <h3 class="project-title">OutSystems Development Competition - 1st Place</h3>
+        <p class="project-description">
+          Achieved first place in an OutSystems development event with a teammate, demonstrating 
+          strong problem-solving and collaboration skills. Gained proficiency in no-code development 
+          platforms and rapid application deployment.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">OutSystems</span>
+          <span class="tech-tag">No-Code</span>
+          <span class="tech-tag">Team Collaboration</span>
+        </div>
+      </div>
+
+      <!-- n8n Workflows -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">⚙️</span>
+          <span class="project-date">Jan – Sep 2025</span>
+        </div>
+        <h3 class="project-title">Automated Workflows & RAG Systems</h3>
+        <p class="project-description">
+          Designed and implemented automated workflows using n8n to streamline tasks and improve efficiency. 
+          Built Retrieval-Augmented Generation (RAG) systems and deployed local LLMs using Ollama, gaining 
+          practical experience in AI integration and edge model deployment.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">n8n</span>
+          <span class="tech-tag">RAG</span>
+          <span class="tech-tag">Ollama</span>
+          <span class="tech-tag">LLMs</span>
+          <span class="tech-tag">Automation</span>
+        </div>
+      </div>
+
+      <!-- Cerebral Palsy Game -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">🎮</span>
+          <span class="project-date">Sep 2021 – Jun 2022</span>
+        </div>
+        <h3 class="project-title">Serious Game for Children with Cerebral Palsy</h3>
+        <p class="project-description">
+          Designed and implemented a Unity-based therapeutic game for children with Cerebral Palsy. 
+          Integrated Bluetooth communication with Wii Balance Board for real-time data collection, 
+          utilizing MongoDB and FastAPI for comprehensive data analysis and reporting.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Unity</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">Bluetooth</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">FastAPI</span>
+        </div>
+      </div>
+
+      <!-- ML Bot Detection -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">🤖</span>
+          <span class="project-date">May – Jun 2022</span>
+        </div>
+        <h3 class="project-title">ML Model for Bot & Political Tweet Detection</h3>
+        <p class="project-description">
+          Developed machine learning models in Python to detect bot users and predict political tweets. 
+          Achieved impressive accuracy scores of 0.83 for Bot Detection and 0.78 for Political Tweet Prediction.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Machine Learning</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Data Analysis</span>
+        </div>
+      </div>
+
+      <!-- E-Commerce System -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">🛒</span>
+          <span class="project-date">Jun 2021</span>
+        </div>
+        <h3 class="project-title">Full-Stack E-Commerce Platform</h3>
+        <p class="project-description">
+          Designed and developed a comprehensive e-commerce website using Django and React. 
+          Implemented user registration, sales management, product listing, and shopping cart features 
+          with a modern, responsive interface.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">REST API</span>
+        </div>
+      </div>
+
+      <!-- Social Media App -->
+      <div class="project-card scroll-reveal">
+        <div class="project-header">
+          <span class="project-icon">📱</span>
+          <span class="project-date">Jun 2021</span>
+        </div>
+        <h3 class="project-title">Social Media Mobile Application</h3>
+        <p class="project-description">
+          Developed a Twitter-like social media application using Flutter and Dart. 
+          Implemented features including user search, photo sharing, liking, commenting, 
+          and real-time feed updates with a polished mobile interface.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">Mobile Dev</span>
+          <span class="tech-tag">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Let's connect and create something amazing together</p>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:soyluberkay1999@gmail.com" class="contact-link">soyluberkay1999@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+4901762473517" class="contact-link">+49 0 176 24737517</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Stuttgart, Germany</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/Rectiras" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/berkay-soylu" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-cta" style="margin-top: 2rem;">
+        <a href="CV.pdf" class="btn btn-primary" download>Download Full CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built by Berkay Çağrı Soylu with <span class="footer-heart">♥</span></p>
+    <p>&copy; 2025 All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
