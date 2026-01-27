@@ -241,18 +241,25 @@ gsap.from('.contact-content', {
 });
 
 // Social links animation
-gsap.from('.social-link', {
-  scrollTrigger: {
-    trigger: '.social-links',
-    start: 'top 85%',
-    toggleActions: 'play none none none'
+gsap.fromTo('.social-link', 
+  {
+    opacity: 0,
+    scale: 0
   },
-  duration: 0.5,
-  opacity: 0,
-  scale: 0,
-  stagger: 0.1,
-  ease: 'back.out(1.7)'
-});
+  {
+    scrollTrigger: {
+      trigger: '.social-links',
+      start: 'top 85%',
+      toggleActions: 'play none none none'
+    },
+    duration: 0.5,
+    opacity: 1,
+    scale: 1,
+    stagger: 0.1,
+    ease: 'back.out(1.7)',
+    immediateRender: false
+  }
+);
 
 // ========================================
 // Interactive Effects
